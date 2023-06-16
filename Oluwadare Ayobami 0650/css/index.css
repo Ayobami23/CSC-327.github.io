@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --red:#ff3838;
+    --green: #00a729;
+    --blue: #0091ff;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .5s linear;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background: var(--red);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:#f7f7f7;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.btn{
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--red);
+    color: var(--red);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: var(--red);
+}
+
+
+/* first section */
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home .content{
+    flex: 1 1 30rem;
+    padding-top: 5rem;
+    max-width: 35%;
+
+}
+
+.home .image{
+    flex: 1 1 30rem;
+    max-width: 65%;
+    background-color: #eeeeee;
+    border-radius: 30rem 0 0 30rem;
+    text-align: center;
+}
+
+.home .image img{
+    padding: 1rem;
+    width: 60rem;
+}
+
+
+.home .content h3{
+    font-size: 5rem;
+    color: #333;
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+/* second section */
+.speciality .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.speciality .box-container .box{
+    flex: 1 1 30rem;
+    border: .1rem solid var(--red);
+    background-color: var(--red);
+    cursor: pointer;
+    border-radius: 3rem;
+    gap: 1.5rem;
+}
+
+.speciality .box-container .box .content{
+    text-align: center;
+    background: var(--red);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.speciality .box-container .box .content img{
+    margin: 1.5rem 0;
+}
+
+.speciality .box-container .box .content h3{
+    font-size: 2.5rem;
+}
+
+.speciality .box-container .box .content p{
+    font-size: 1.6rem;
+    padding: 1rem 0%;
+}
